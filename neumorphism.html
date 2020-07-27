@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+</head>
+
+<body style="background: #ecf0f3;">
+  <div class="container my-5 py-5 ">
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+          <h3 class="font-weight-bold">Contact Us</h3>
+           <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+            molestiae
+            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
+            <p><span class="font-weight-bold mr-2">Email:</span><a href="">contact@mycompany.com</a></p>
+             <p><span class="font-weight-bold mr-2">Phone:</span><a href="">+48 123 456 789</a></p>
+        </div>
+        <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
+          <div class="row">
+             <div class="col-md-3">
+              <div class="md-form md-outline mb-0">
+                <input type="text" id="form-Roll-No" class="form-control" placeholder="Roll No.">
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="md-form md-outline mb-0">
+                <input type="text" id="form-name" class="form-control" placeholder="Name">
+              </div>
+            </div>
+          </div>
+          <div class="md-form md-outline mt-3 mb-0">
+            <input type="email" id="form-email" class="form-control" placeholder="Email">
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="md-form md-outline mt-3">
+                <select class="mdb-select md-form  form-control" id="comp">
+                  <option value="" disabled selected>Choose your branch</option>
+                  <option value="1">Computer</option>
+                  <option value="2">Civil</option>
+                  <option value="4">Mechanical</option>
+                  <option value="5">Electronics & TeleCommunication</option>
+                  <option value="6">Electronics</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div id="demo" class="collapse in">
+                <div class="md-form md-outline mt-3">
+                  <select class="mdb-select md-form  form-control">
+                    <option value="" disabled selected>Div</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md-form md-outline mt-2">
+            <textarea id="form-message" class="md-textarea form-control" rows="10"
+              placeholder="Write Your Message Here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-info btn-sm ml-0">Submit<i class="far fa-paper-plane ml-2"></i></button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    $('#comp').change(function () {
+      if ($('#comp option:selected').val() == 1) {
+        $('#demo').collapse('show');
+      }
+      else {
+        $('#demo').collapse('hide');
+      }
+    });
+  </script>
+</body>
+</html>
